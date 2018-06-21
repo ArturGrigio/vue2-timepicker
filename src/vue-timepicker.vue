@@ -70,6 +70,12 @@ export default {
 
   watch: {
     'format': 'renderFormat',
+    'hourmin': function (newHour) {
+      this.renderHoursList()
+    },
+    'hourmax': function (newHour) {
+      this.renderHoursList()
+    },
     minuteInterval (newInteval) {
       this.renderList('minute', newInteval)
     },
